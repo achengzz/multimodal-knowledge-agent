@@ -32,9 +32,6 @@ def react_subgraph(llm:BaseChatModel):
     graph=workflow.compile()
     return graph
 
-# g=react_subgraph(llm)
-# p=g.invoke(create_initial_state("我在在读本地小说《流浪地球》，你帮我找找太阳发生“氦闪”爆炸的直接原因是什么？爆炸后太阳将变成什么状态？"))
-# pprint(p)
 
 
 def main_graph(llm:BaseChatModel):
@@ -59,11 +56,3 @@ def main_graph(llm:BaseChatModel):
     )
     graph=workflow.compile()
     return graph
-
-
-
-
-
-
-# r=g.invoke(create_initial_state("我在在读本地小说《流浪地球》，你帮我找找太阳发生“氦闪”爆炸的直接原因是什么？爆炸后太阳将变成什么状态？"))
-# pprint(r)
