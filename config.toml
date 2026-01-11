@@ -1,0 +1,17 @@
+
+#本地模型路径
+[model_path]
+altclip = "E:\\agent-env\\model\\embedding\\BAAI--AltCLIP"  #多模态编码模型
+bge_encode="E:\\agent-env\\model\\embedding\\BAAI--bge-large-zh-v1.5"  #文本嵌入模型
+bge_rerank="E:\\agent-env\\model\\reranker\\BAAI--bge-reranker-base"    #重排序模型--有时候重排可能效果变差，原因有很多，这里为了演示用上了
+
+#向量数据库
+[vector_database]
+url="http://192.168.10.10:6333"     #API地址
+
+
+#知识库
+[knowledge_base]
+path="E:\\资料库"      #智能体会将该路径下的所有格式支持的文件编码到向量数据库，作为知识库，用于多模态检索或rag
+
+
